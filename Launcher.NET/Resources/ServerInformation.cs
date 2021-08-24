@@ -12,10 +12,16 @@ namespace Launcher.NET.Resources
     {
         [JsonProperty("ip")]
         public String ip { get; set; }
+        [JsonProperty("port")]
+        public int port { get; set; }
         [JsonProperty("discord")]
         public String discord { get; set; }
+        [JsonProperty("InUpdate")]
+        public String InUpdate { get; set; }
         [JsonProperty("name")]
         public String Name { get; set; }
+        [JsonProperty("icon")]
+        public String icon { get; set; }
     }
 
 
@@ -32,6 +38,8 @@ namespace Launcher.NET.Resources
         public int sv_maxClients;
     }
 
+
+
     public class Players
     {
         public String name { get; set; }
@@ -47,12 +55,14 @@ namespace Launcher.NET.Resources
 
         public String status;
 
-        public async Task<List<Players>> PlayerInfo(string url)
+        public async Task<List<Players>> PlayerInfo(string ip, int port)
         {
             List<Players> player = new List<Players>();
             try
             {
-                HttpResponseMessage response = await client.GetAsync(url + "/players.json");
+                HttpClient client = new HttpClient();
+                client.Timeout = TimeSpan.FromMilliseconds(3000);
+                HttpResponseMessage response = await client.GetAsync("http://" + ip + ":" + port + "/players.json");
                 response.EnsureSuccessStatusCode();
                 string responseBody = await response.Content.ReadAsStringAsync();
                 // Above three lines can be replaced with new helper method below
@@ -74,14 +84,14 @@ namespace Launcher.NET.Resources
             }
         }
 
-        public async Task<ServerInfo> SInfo(string url)
+        public async Task<ServerInfo> SInfo(string ip, int port)
         {
             //client.CancelPendingRequests();
             
             ServerInfo vars = new ServerInfo();
             try
             {
-                HttpResponseMessage response = await client.GetAsync(url + "/info.json");
+                HttpResponseMessage response = await client.GetAsync("http://" + ip + ":" + port + "/info.json");
                 response.EnsureSuccessStatusCode();
                 string responseBody = await response.Content.ReadAsStringAsync();
                 // Above three lines can be replaced with new helper method below

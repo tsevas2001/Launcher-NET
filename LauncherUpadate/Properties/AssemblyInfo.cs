@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Noahax Launcher")]
-[assembly: AssemblyDescription("MK-Penguin")]
+[assembly: AssemblyTitle("LauncherUpadate")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Noahax")]
-[assembly: AssemblyProduct("Noahax Launcher")]
-[assembly: AssemblyCopyright("| MK-Penguin | Copyright ©  2021 Maded By Tsevas2001")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("LauncherUpadate")]
+[assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("a988f847-8f5c-41c8-ac5b-f50b91b945cc")]
+[assembly: Guid("8c62c81f-51e5-4537-a2dd-b4c1d93a764f")]
 
 // Version information for an assembly consists of the following four values:
 //

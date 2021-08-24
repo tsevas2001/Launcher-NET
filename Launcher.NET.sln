@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31313.79
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Launcher.NET", "Launcher.NET\Launcher.NET.csproj", "{A988F847-8F5C-41C8-AC5B-F50B91B945CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LauncherUpadate", "LauncherUpadate\LauncherUpadate.csproj", "{8C62C81F-51E5-4537-A2DD-B4C1D93A764F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A988F847-8F5C-41C8-AC5B-F50B91B945CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A988F847-8F5C-41C8-AC5B-F50B91B945CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A988F847-8F5C-41C8-AC5B-F50B91B945CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C62C81F-51E5-4537-A2DD-B4C1D93A764F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C62C81F-51E5-4537-A2DD-B4C1D93A764F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C62C81F-51E5-4537-A2DD-B4C1D93A764F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C62C81F-51E5-4537-A2DD-B4C1D93A764F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

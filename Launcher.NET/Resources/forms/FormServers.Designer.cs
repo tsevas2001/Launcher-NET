@@ -36,62 +36,54 @@ namespace Launcher.NET.Resources.forms
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.panelServerList = new Guna.UI2.WinForms.Guna2Panel();
             this.pmlServer1 = new Guna.UI2.WinForms.Guna2Panel();
             this.ping = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnPlayerList = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDisc = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnJoin = new Guna.UI2.WinForms.Guna2GradientButton();
             this.tpBar = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.status2 = new Guna.UI2.WinForms.Guna2Panel();
             this.TotalPlayers = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnJoin = new Guna.UI2.WinForms.Guna2GradientButton();
             this.lblServerTitle = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pbServerImage = new System.Windows.Forms.PictureBox();
-            this.ScrollBar = new Guna.UI2.WinForms.Guna2VScrollBar();
-            this.fpnlServerList = new System.Windows.Forms.FlowLayoutPanel();
             this.gPlayers = new Guna.UI2.WinForms.Guna2DataGridView();
             this.tName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tMS = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panelServerList.SuspendLayout();
+            this.pnlServerTab = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.pnlServerLoad = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblLoading = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pmlServer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbServerImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gPlayers)).BeginInit();
+            this.pnlServerTab.SuspendLayout();
+            this.pnlServerLoad.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panelServerList
-            // 
-            this.panelServerList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.panelServerList.Controls.Add(this.pmlServer1);
-            this.panelServerList.Controls.Add(this.ScrollBar);
-            this.panelServerList.Location = new System.Drawing.Point(83, 38);
-            this.panelServerList.Name = "panelServerList";
-            this.panelServerList.ShadowDecoration.Parent = this.panelServerList;
-            this.panelServerList.Size = new System.Drawing.Size(618, 318);
-            this.panelServerList.TabIndex = 1;
             // 
             // pmlServer1
             // 
             this.pmlServer1.Controls.Add(this.ping);
             this.pmlServer1.Controls.Add(this.btnPlayerList);
+            this.pmlServer1.Controls.Add(this.btnDisc);
+            this.pmlServer1.Controls.Add(this.btnJoin);
             this.pmlServer1.Controls.Add(this.tpBar);
             this.pmlServer1.Controls.Add(this.status2);
             this.pmlServer1.Controls.Add(this.TotalPlayers);
-            this.pmlServer1.Controls.Add(this.btnJoin);
             this.pmlServer1.Controls.Add(this.lblServerTitle);
             this.pmlServer1.Controls.Add(this.pbServerImage);
-            this.pmlServer1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pmlServer1.Location = new System.Drawing.Point(0, 0);
+            this.pmlServer1.Location = new System.Drawing.Point(724, 598);
             this.pmlServer1.Name = "pmlServer1";
             this.pmlServer1.ShadowDecoration.Parent = this.pmlServer1;
             this.pmlServer1.Size = new System.Drawing.Size(600, 100);
             this.pmlServer1.TabIndex = 1;
+            this.pmlServer1.Visible = false;
             // 
             // ping
             // 
             this.ping.BackColor = System.Drawing.Color.Transparent;
             this.ping.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ping.ForeColor = System.Drawing.Color.White;
-            this.ping.Location = new System.Drawing.Point(343, 51);
+            this.ping.Location = new System.Drawing.Point(277, 51);
             this.ping.Name = "ping";
             this.ping.Size = new System.Drawing.Size(60, 22);
             this.ping.TabIndex = 7;
@@ -114,56 +106,43 @@ namespace Launcher.NET.Resources.forms
             this.btnPlayerList.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnPlayerList.ForeColor = System.Drawing.Color.White;
             this.btnPlayerList.HoverState.Parent = this.btnPlayerList;
+            this.btnPlayerList.Image = global::Launcher.NET.Properties.Resources.icons8_user_50px;
             this.btnPlayerList.Location = new System.Drawing.Point(189, 51);
             this.btnPlayerList.Name = "btnPlayerList";
             this.btnPlayerList.ShadowDecoration.Parent = this.btnPlayerList;
-            this.btnPlayerList.Size = new System.Drawing.Size(59, 27);
+            this.btnPlayerList.Size = new System.Drawing.Size(79, 27);
             this.btnPlayerList.TabIndex = 6;
             this.btnPlayerList.Text = "Show";
             // 
-            // tpBar
+            // btnDisc
             // 
-            this.tpBar.BorderRadius = 4;
-            this.tpBar.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tpBar.Location = new System.Drawing.Point(121, 84);
-            this.tpBar.Name = "tpBar";
-            this.tpBar.ProgressColor = System.Drawing.Color.Maroon;
-            this.tpBar.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tpBar.ShadowDecoration.Parent = this.tpBar;
-            this.tpBar.Size = new System.Drawing.Size(476, 16);
-            this.tpBar.TabIndex = 3;
-            this.tpBar.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.tpBar.ValueChanged += new System.EventHandler(this.tpBar_ValueChanged);
-            // 
-            // status2
-            // 
-            this.status2.BackColor = System.Drawing.Color.Red;
-            this.status2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.status2.Location = new System.Drawing.Point(597, 0);
-            this.status2.Name = "status2";
-            this.status2.ShadowDecoration.Parent = this.status2;
-            this.status2.Size = new System.Drawing.Size(3, 100);
-            this.status2.TabIndex = 5;
-            this.status2.Paint += new System.Windows.Forms.PaintEventHandler(this.status2_Paint);
-            // 
-            // TotalPlayers
-            // 
-            this.TotalPlayers.AvoidGeometryAntialias = true;
-            this.TotalPlayers.BackColor = System.Drawing.Color.Transparent;
-            this.TotalPlayers.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalPlayers.ForeColor = System.Drawing.Color.White;
-            this.TotalPlayers.Location = new System.Drawing.Point(161, 26);
-            this.TotalPlayers.Name = "TotalPlayers";
-            this.TotalPlayers.Size = new System.Drawing.Size(115, 19);
-            this.TotalPlayers.TabIndex = 4;
-            this.TotalPlayers.Text = "Total Players 0 / 0";
-            this.TotalPlayers.Click += new System.EventHandler(this.TotalPlayers_Click);
+            this.btnDisc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDisc.Animated = true;
+            this.btnDisc.CheckedState.Parent = this.btnDisc;
+            this.btnDisc.CustomImages.Parent = this.btnDisc;
+            this.btnDisc.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDisc.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDisc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDisc.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDisc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDisc.DisabledState.Parent = this.btnDisc;
+            this.btnDisc.FillColor = System.Drawing.Color.Red;
+            this.btnDisc.FillColor2 = System.Drawing.Color.Black;
+            this.btnDisc.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnDisc.ForeColor = System.Drawing.Color.White;
+            this.btnDisc.HoverState.Parent = this.btnDisc;
+            this.btnDisc.Image = global::Launcher.NET.Properties.Resources.icons8_discord_32px;
+            this.btnDisc.Location = new System.Drawing.Point(467, 51);
+            this.btnDisc.Name = "btnDisc";
+            this.btnDisc.ShadowDecoration.Parent = this.btnDisc;
+            this.btnDisc.Size = new System.Drawing.Size(109, 29);
+            this.btnDisc.TabIndex = 2;
+            this.btnDisc.Text = "DISCORD";
             // 
             // btnJoin
             // 
             this.btnJoin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnJoin.Animated = true;
-            this.btnJoin.BorderRadius = 20;
             this.btnJoin.CheckedState.Parent = this.btnJoin;
             this.btnJoin.CustomImages.Parent = this.btnJoin;
             this.btnJoin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -177,13 +156,47 @@ namespace Launcher.NET.Resources.forms
             this.btnJoin.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnJoin.ForeColor = System.Drawing.Color.White;
             this.btnJoin.HoverState.Parent = this.btnJoin;
-            this.btnJoin.Location = new System.Drawing.Point(464, 32);
+            this.btnJoin.Location = new System.Drawing.Point(467, 16);
             this.btnJoin.Name = "btnJoin";
             this.btnJoin.ShadowDecoration.Parent = this.btnJoin;
-            this.btnJoin.Size = new System.Drawing.Size(109, 37);
+            this.btnJoin.Size = new System.Drawing.Size(109, 29);
             this.btnJoin.TabIndex = 2;
             this.btnJoin.Text = "OFFLINE";
-            this.btnJoin.Click += new System.EventHandler(this.btnJoin_Click);
+            // 
+            // tpBar
+            // 
+            this.tpBar.BorderRadius = 4;
+            this.tpBar.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tpBar.Location = new System.Drawing.Point(121, 84);
+            this.tpBar.Name = "tpBar";
+            this.tpBar.ProgressColor = System.Drawing.Color.Maroon;
+            this.tpBar.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tpBar.ShadowDecoration.Parent = this.tpBar;
+            this.tpBar.Size = new System.Drawing.Size(476, 16);
+            this.tpBar.TabIndex = 3;
+            this.tpBar.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            // 
+            // status2
+            // 
+            this.status2.BackColor = System.Drawing.Color.Red;
+            this.status2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.status2.Location = new System.Drawing.Point(597, 0);
+            this.status2.Name = "status2";
+            this.status2.ShadowDecoration.Parent = this.status2;
+            this.status2.Size = new System.Drawing.Size(3, 100);
+            this.status2.TabIndex = 5;
+            // 
+            // TotalPlayers
+            // 
+            this.TotalPlayers.AvoidGeometryAntialias = true;
+            this.TotalPlayers.BackColor = System.Drawing.Color.Transparent;
+            this.TotalPlayers.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalPlayers.ForeColor = System.Drawing.Color.White;
+            this.TotalPlayers.Location = new System.Drawing.Point(161, 26);
+            this.TotalPlayers.Name = "TotalPlayers";
+            this.TotalPlayers.Size = new System.Drawing.Size(115, 19);
+            this.TotalPlayers.TabIndex = 4;
+            this.TotalPlayers.Text = "Total Players 0 / 0";
             // 
             // lblServerTitle
             // 
@@ -207,39 +220,13 @@ namespace Launcher.NET.Resources.forms
             this.pbServerImage.TabIndex = 0;
             this.pbServerImage.TabStop = false;
             // 
-            // ScrollBar
-            // 
-            this.ScrollBar.AutoRoundedCorners = true;
-            this.ScrollBar.BindingContainer = this.panelServerList;
-            this.ScrollBar.BorderRadius = 8;
-            this.ScrollBar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.ScrollBar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ScrollBar.HoverState.Parent = null;
-            this.ScrollBar.InUpdate = false;
-            this.ScrollBar.LargeChange = 10;
-            this.ScrollBar.Location = new System.Drawing.Point(600, 0);
-            this.ScrollBar.Name = "ScrollBar";
-            this.ScrollBar.PressedState.Parent = this.ScrollBar;
-            this.ScrollBar.ScrollbarSize = 18;
-            this.ScrollBar.Size = new System.Drawing.Size(18, 318);
-            this.ScrollBar.TabIndex = 0;
-            this.ScrollBar.ThumbColor = System.Drawing.Color.Maroon;
-            // 
-            // fpnlServerList
-            // 
-            this.fpnlServerList.AutoScroll = true;
-            this.fpnlServerList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.fpnlServerList.Location = new System.Drawing.Point(83, 362);
-            this.fpnlServerList.Name = "fpnlServerList";
-            this.fpnlServerList.Size = new System.Drawing.Size(610, 229);
-            this.fpnlServerList.TabIndex = 3;
-            // 
             // gPlayers
             // 
             this.gPlayers.AllowUserToDeleteRows = false;
+            this.gPlayers.AllowUserToResizeColumns = false;
             this.gPlayers.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Red;
@@ -264,7 +251,7 @@ namespace Launcher.NET.Resources.forms
             this.tMS});
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.Maroon;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Red;
@@ -272,7 +259,7 @@ namespace Launcher.NET.Resources.forms
             this.gPlayers.DefaultCellStyle = dataGridViewCellStyle6;
             this.gPlayers.EnableHeadersVisualStyles = false;
             this.gPlayers.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.gPlayers.Location = new System.Drawing.Point(830, 38);
+            this.gPlayers.Location = new System.Drawing.Point(717, 21);
             this.gPlayers.Name = "gPlayers";
             this.gPlayers.ReadOnly = true;
             this.gPlayers.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -287,7 +274,7 @@ namespace Launcher.NET.Resources.forms
             this.gPlayers.RowHeadersVisible = false;
             this.gPlayers.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.gPlayers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gPlayers.Size = new System.Drawing.Size(439, 531);
+            this.gPlayers.Size = new System.Drawing.Size(439, 513);
             this.gPlayers.TabIndex = 4;
             this.gPlayers.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.gPlayers.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -311,7 +298,6 @@ namespace Launcher.NET.Resources.forms
             this.gPlayers.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.gPlayers.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.gPlayers.Visible = false;
-            this.gPlayers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick);
             // 
             // tName
             // 
@@ -337,31 +323,65 @@ namespace Launcher.NET.Resources.forms
             this.tMS.Name = "tMS";
             this.tMS.ReadOnly = true;
             // 
+            // pnlServerTab
+            // 
+            this.pnlServerTab.BackColor = System.Drawing.Color.Transparent;
+            this.pnlServerTab.Controls.Add(this.pnlServerLoad);
+            this.pnlServerTab.Controls.Add(this.gPlayers);
+            this.pnlServerTab.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.pnlServerTab.Location = new System.Drawing.Point(53, 2);
+            this.pnlServerTab.Name = "pnlServerTab";
+            this.pnlServerTab.Radius = 30;
+            this.pnlServerTab.ShadowColor = System.Drawing.Color.Red;
+            this.pnlServerTab.ShadowShift = 20;
+            this.pnlServerTab.Size = new System.Drawing.Size(1224, 561);
+            this.pnlServerTab.TabIndex = 0;
+            // 
+            // pnlServerLoad
+            // 
+            this.pnlServerLoad.AutoScroll = true;
+            this.pnlServerLoad.Controls.Add(this.lblLoading);
+            this.pnlServerLoad.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.pnlServerLoad.Location = new System.Drawing.Point(68, 21);
+            this.pnlServerLoad.Name = "pnlServerLoad";
+            this.pnlServerLoad.ShadowDecoration.Parent = this.pnlServerLoad;
+            this.pnlServerLoad.Size = new System.Drawing.Size(539, 513);
+            this.pnlServerLoad.TabIndex = 5;
+            // 
+            // lblLoading
+            // 
+            this.lblLoading.BackColor = System.Drawing.Color.Transparent;
+            this.lblLoading.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLoading.ForeColor = System.Drawing.Color.Maroon;
+            this.lblLoading.Location = new System.Drawing.Point(234, 243);
+            this.lblLoading.Name = "lblLoading";
+            this.lblLoading.Size = new System.Drawing.Size(81, 23);
+            this.lblLoading.TabIndex = 0;
+            this.lblLoading.Text = "Loading....";
+            // 
             // FormServers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(1424, 710);
-            this.Controls.Add(this.gPlayers);
-            this.Controls.Add(this.fpnlServerList);
-            this.Controls.Add(this.panelServerList);
+            this.Controls.Add(this.pnlServerTab);
+            this.Controls.Add(this.pmlServer1);
             this.Name = "FormServers";
             this.Text = "FormServers";
             this.Load += new System.EventHandler(this.FormServers_Load);
-            this.panelServerList.ResumeLayout(false);
             this.pmlServer1.ResumeLayout(false);
             this.pmlServer1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbServerImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gPlayers)).EndInit();
+            this.pnlServerTab.ResumeLayout(false);
+            this.pnlServerLoad.ResumeLayout(false);
+            this.pnlServerLoad.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2Panel panelServerList;
-        private Guna.UI2.WinForms.Guna2VScrollBar ScrollBar;
         private Guna.UI2.WinForms.Guna2Panel pmlServer1;
         private Guna.UI2.WinForms.Guna2HtmlLabel TotalPlayers;
         private Guna.UI2.WinForms.Guna2ProgressBar tpBar;
@@ -369,12 +389,15 @@ namespace Launcher.NET.Resources.forms
         private Guna.UI2.WinForms.Guna2HtmlLabel lblServerTitle;
         private System.Windows.Forms.PictureBox pbServerImage;
         private Guna.UI2.WinForms.Guna2Panel status2;
-        private System.Windows.Forms.FlowLayoutPanel fpnlServerList;
         private Guna.UI2.WinForms.Guna2DataGridView gPlayers;
         private Guna.UI2.WinForms.Guna2Button btnPlayerList;
         private System.Windows.Forms.DataGridViewTextBoxColumn tName;
         private System.Windows.Forms.DataGridViewTextBoxColumn tID;
         private System.Windows.Forms.DataGridViewTextBoxColumn tMS;
         private Guna.UI2.WinForms.Guna2HtmlLabel ping;
+        private Guna.UI2.WinForms.Guna2GradientButton btnDisc;
+        private Guna.UI2.WinForms.Guna2ShadowPanel pnlServerTab;
+        private Guna.UI2.WinForms.Guna2Panel pnlServerLoad;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblLoading;
     }
 }
